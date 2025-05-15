@@ -25,7 +25,7 @@ This repository is a hands-on, example-driven guide for learning TypeScript fund
 
 1. **Clone the repository**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/emranmho/Explore-TypeScript.git
    cd Explore-TypeScript
    ```
 
@@ -36,13 +36,22 @@ This repository is a hands-on, example-driven guide for learning TypeScript fund
 
 3. **Open in VS Code**
    - Open the folder in [Visual Studio Code](https://code.visualstudio.com/).
-   - Recommended: Install the official [TypeScript extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).
 
 4. **Run TypeScript files**
-   - Compile and run any `.ts` file using:
-     ```sh
-     tsc path/to/file.ts && node path/to/file.js
-     ```
+   - **With Bun (recommended for direct `.ts` execution):**
+     - Install Bun (Windows PowerShell):
+       ```sh
+       powershell -c "irm bun.sh/install.ps1 | iex"
+       ```
+     - Run any `.ts` file directly:
+       ```sh
+       bun file.ts
+       ```
+   - **With Node.js and tsc:**
+     - Compile and run any `.ts` file using:
+       ```sh
+       tsc file.ts && node file.js
+       ```
    - Or use the built-in VS Code terminal and "Run" button.
 
 5. **Explore and Experiment**
